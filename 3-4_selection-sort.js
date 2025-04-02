@@ -17,12 +17,12 @@ rl.on("line", (line) => {
   }
 }).on("close", () => {
   let count = 0;
-  [a, count] = selectoinSort(a);
+  [a, count] = selectionSort(a);
   console.log(a.join(" "));
   console.log(count);
 });
 
-function selectoinSort(a) {
+function selectionSort(a) {
   let count = 0;
   for (let i = 0; i < a.length; i++) {
     let minj = i;
